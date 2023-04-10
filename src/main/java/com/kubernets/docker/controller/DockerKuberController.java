@@ -27,6 +27,7 @@ public class DockerKuberController {
 		return service.saveData(userdto);
 	}
 	public User getUserById(Integer id) {
+		System.out.println(id);
 		return service.getUserById(id);
 	}
 }
