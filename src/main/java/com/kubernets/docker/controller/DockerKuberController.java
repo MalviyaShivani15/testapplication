@@ -20,6 +20,7 @@ public class DockerKuberController {
 	@GetMapping("get")
 	public List<User> getResponseFromDb() {
 		return service.getAllData();
+
 	}
 
 	@PostMapping("save")
