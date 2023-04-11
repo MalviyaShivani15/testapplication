@@ -27,6 +27,11 @@ public class DockerKuberController {
 		return service.saveData(userdto);
 	}
 
+	@PostMapping("save")
+	public String saveData1(@RequestBody Dto userdto) {
+		return service.saveData(userdto);
+	}
+
 	public User getUserById(Integer id) {
 		return service.getUserById(id);
 	}
